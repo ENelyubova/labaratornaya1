@@ -10,3 +10,12 @@ while i < len(a):
         max = a[i]
     i = i + 1
 print ("min =", min,"max =", max)
+
+# 2
+A = {0: 0, 1: 1}
+def fib(n):
+    if n in A:
+        return A[n]
+    A[n] = fib(n-1) + fib(n-2)
+    return A[n]
+print(fib(15))
