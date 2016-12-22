@@ -1,4 +1,3 @@
-#1
 a = [19, 17, 24, 1, 100, 25, 846, 39]
 i = 0
 min = a[i]
@@ -11,7 +10,7 @@ while i < len(a):
     i = i + 1
 print ("min =", min,"max =", max)
 
-# 2
+
 A = {0: 0, 1: 1}
 def fib(n):
     if n in A:
@@ -19,3 +18,11 @@ def fib(n):
     A[n] = fib(n-1) + fib(n-2)
     return A[n]
 print(fib(15))
+
+
+def Contains(s: str):
+L = ["й", "ц", "к", "н", "г", "ш", "щ", "з", "х", "ф", "в", "п", "р", "л", "д", "ж", "ч", "с", "м", "т"]
+for x in s:
+if x in l:
+return True
+return False
