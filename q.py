@@ -20,9 +20,25 @@ def fib(n):
 print(fib(15))
 
 
-def Contains(s: str):
-L = ["й", "ц", "к", "н", "г", "ш", "щ", "з", "х", "ф", "в", "п", "р", "л", "д", "ж", "ч", "с", "м", "т"]
+# def Contains(s: str):
+# L = ["й", "ц", "к", "н", "г", "ш", "щ", "з", "х", "ф", "в", "п", "р", "л", "д", "ж", "ч", "с", "м", "т"]
+# for x in s:
+# if x in l:
+# return True
+# return False
+
+def Split(s: str) -> list:
+l = []
+ss = ""
 for x in s:
-if x in l:
-return True
-return False
+if x == " " or x == ', ' or x == '. ' or x == '? ' or x == '! ':
+l.append(ss)
+ss = ""
+else:
+ss += x
+l.append(ss)
+for x in l:
+if Contains(x):
+print(x)
+
+
